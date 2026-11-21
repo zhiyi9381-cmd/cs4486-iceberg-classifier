@@ -1,0 +1,61 @@
+{
+  "run_id": "p76meta_20261104_165253",
+  "timestamp_utc": "2026-11-04T16:52:58.062788+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "lightgbm": "4.7.0",
+  "code_version": "f085a39591c440a9f1b75ad23cd2ef83337fe03a647cccebd8b22170cd9feb26",
+  "model": "multiseed_bagging_DeepCNN + exact_angle_group + multi_LGBM + soft_leaky (best w)",
+  "nn_pred_source": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\nn_pred_multiseed_p76cnn_20261104_154347.npz",
+  "lgbm_seeds": [
+    42,
+    7,
+    2024
+  ],
+  "cv_schemes": {
+    "meta_base": {
+      "mean": 0.15847,
+      "std": 0.044928
+    },
+    "softleaky_w0.3": {
+      "mean": 0.144086,
+      "std": 0.032221
+    },
+    "softleaky_w0.4": {
+      "mean": 0.14452,
+      "std": 0.03229
+    },
+    "softleaky_w0.5": {
+      "mean": 0.145279,
+      "std": 0.032625
+    },
+    "softleaky_w0.6": {
+      "mean": 0.146347,
+      "std": 0.033211
+    },
+    "softleaky_w0.7": {
+      "mean": 0.147765,
+      "std": 0.034096
+    },
+    "hardleaky_w0": {
+      "mean": 0.149495,
+      "std": 0.038555
+    }
+  },
+  "cv_best": "softleaky_w0.3",
+  "best_w": 0.3,
+  "nan_fix": "133 NaN values in val nn_pred (angle-missing samples) were filled with P4 single-seed nn_pred",
+  "sharpening": "Not used (quick experiment p7_6_experiment confirmed sharpening 1.15 raised CV from 0.1586 to 0.1666, harmful)",
+  "pred_checks": {
+    "pred_in_01": true,
+    "pred_min": 0.00042447882988718935,
+    "pred_max": 0.9968737710269535,
+    "n_override": 1959,
+    "n_test": 8424,
+    "id_unique": true
+  },
+  "csv_path": "C:\\Users\\zhouz\\Desktop\\method2\\submissions\\submission_v3_p76meta_20261104_165253.csv",
+  "csv_sha256": "4974c82fc430f77fd8b1d5e87d2d5a423f7dcb3e92cd225fd4afe1c5c5772d72",
+  "pred_npz": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\test_preds_5fold_v3_p76meta_20261104_165253.npz",
+  "disclosure": "Multi-seed bagged nn_pred: val/test use 5 seeds + TTA, while tr_k reuses the single-seed inner OOF from P4; soft-leaky fusion is based on training-label statistics (no leaderboard feedback). Referenced in Section V of the report."
+}

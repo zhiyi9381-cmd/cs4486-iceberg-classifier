@@ -1,0 +1,24 @@
+{
+  "run_id": "p7_20261104_124930",
+  "timestamp_utc": "2026-11-04T12:55:45.482830+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "torch": "2.15.0+cpu",
+  "lightgbm": "4.7.0",
+  "code_version": "dc35d15014081488b8db4281f47bc1d5ee3a33fce2d763668fc40b7bb3fcb208",
+  "final_model": "pure_meta_plus_KNN (P5 conclusion, no CNN fusion)",
+  "nn_pred_source": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\nn_pred_nested_p4nested_20261104_104820.npz",
+  "n_test": 8424,
+  "pred_checks": {
+    "pred_in_01": true,
+    "pred_min": 0.0002743313420293034,
+    "pred_max": 0.9993978952774354,
+    "not_all_05": true,
+    "n_test": 8424,
+    "id_unique": true
+  },
+  "csv_path": "C:\\Users\\zhouz\\Desktop\\method2\\submissions\\submission_v1_p7_20261104_124930.csv",
+  "csv_sha256": "2a50b531d88b26cb6b9e1b2ac49c6562d9552dc2a6491436feb4edf3246bd38b",
+  "pred_npz": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\test_preds_5fold_p7_20261104_124930.npz",
+  "test_pred_mean_overall": 0.2732209800063158
+}

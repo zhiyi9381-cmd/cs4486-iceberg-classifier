@@ -1,0 +1,35 @@
+{
+  "run_id": "p76cnn_20261104_154347",
+  "timestamp_utc": "2026-11-04T16:50:26.333751+00:00",
+  "code_version": "17da76345eedec592eede85a7b5f26f7708ee33800877ac324124b46dd7f6649",
+  "fold_idx_sha256": "82ab17b4a225e1a0e5155fbb5421c0432c5a2e430ecae5b9ff8362b1a5acc71f",
+  "labels_sha256": "82c5cbbcea6e6eb4689661abbffd295daceca75603af4da4e4c7138e63149319",
+  "train_sha256": "a56756a2528a09b139dc2747e2e40d869f9da7a8c9df37b188b6163f6bfb8696",
+  "seeds": [
+    42,
+    7,
+    2024,
+    1234,
+    0
+  ],
+  "tta": "4-flip (orig/h/v/180)",
+  "train_cfg": {
+    "epochs": 60,
+    "batch": 32,
+    "lr": 0.001,
+    "wd": 0.0001,
+    "dropout": 0.4,
+    "schedule": "cosine(T_max=60)"
+  },
+  "param_count_total": 65426,
+  "nested_source": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\nn_pred_nested_p4nested_20261104_104820.npz",
+  "note": "val_k/test use 5-seed bagging + TTA; tr_k reuses P4's strictly nested single-seed inner OOF (R1 leakage prevention)",
+  "per_fold_val_nn_pred_logloss": [
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN
+  ],
+  "nn_pred_val_mean_logloss": NaN
+}

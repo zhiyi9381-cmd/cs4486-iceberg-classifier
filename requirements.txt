@@ -1,0 +1,5 @@
+# CS4486 Mini Project (Iceberg Classifier) dependencies
+numpy==2.5.1
+scikit-learn==1.9.0
+torch==2.15.0+cpu
+lightgbm==4.7.0

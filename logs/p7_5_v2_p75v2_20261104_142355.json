@@ -1,0 +1,21 @@
+{
+  "run_id": "p75v2_20261104_142355",
+  "timestamp_utc": "2026-11-04T14:33:36.013748+00:00",
+  "code_version": "4e386664adaf862db16dece2d2248d182993ec097939487fa32490d011013066",
+  "model": "meta_plusKNN + exact_angle_group + leaky_clip0.99",
+  "cv_logloss_reference": 0.154778,
+  "clip_hi": 0.99,
+  "clip_lo": 0.01,
+  "pred_checks": {
+    "pred_in_01": true,
+    "pred_min": 0.0003837339698194334,
+    "pred_max": 0.9985481841986921,
+    "n_override": 1959,
+    "n_test": 8424,
+    "id_unique": true
+  },
+  "csv_path": "C:\\Users\\zhouz\\Desktop\\method2\\submissions\\submission_v2_p75v2_20261104_142355.csv",
+  "csv_sha256": "fd303c8657268f82be219316b4458e25edf63b50d1a30bdc7f37bd49171fd898",
+  "pred_npz": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\test_preds_5fold_v2_p75v2_20261104_142355.npz",
+  "disclosure": "soft-leaky post-processing exploits the competition's incident-angle association (samples sharing the same inc_angle tend to share the same label), derived solely from training-label statistics (no leaderboard feedback). Referenced in Section V of the report."
+}

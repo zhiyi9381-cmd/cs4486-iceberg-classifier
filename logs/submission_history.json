@@ -1,0 +1,75 @@
+{
+  "submissions": [
+    {
+      "index": 1,
+      "filename": "submission_v1_p7_20261104_124930.csv",
+      "sha256": "2a50b531d88b26cb6b9e1b2ac49c6562d9552dc2a6491436feb4edf3246bd38b",
+      "public_score": 0.12299,
+      "private_score": 0.13057
+    },
+    {
+      "index": 2,
+      "filename": "submission_v2_p75v2_20261104_142355.csv",
+      "sha256": "fd303c8657268f82be219316b4458e25edf63b50d1a30bdc7f37bd49171fd898",
+      "public_score": 0.14049,
+      "private_score": 0.12057
+    },
+    {
+      "index": 3,
+      "filename": "submission_v3_p76meta_20261104_165253.csv",
+      "sha256": "4974c82fc430f77fd8b1d5e87d2d5a423f7dcb3e92cd225fd4afe1c5c5772d72",
+      "public_score": 0.13902,
+      "private_score": 0.11951
+    },
+    {
+      "index": 4,
+      "filename": "submission_v4_p78_20261105_054325.csv",
+      "sha256": "1b44c42e339058e823890edb1f153c1bbf8efc05b175803b135281ff37020ec0",
+      "public_score": 0.14088,
+      "private_score": 0.11458
+    },
+    {
+      "index": 5,
+      "filename": "submission_v5_p711_20261105_064237.csv",
+      "sha256": "3ae02c1562bec21eb6ac14cf2825260bf4583ead48baac3b2a4e39cb61007561",
+      "public_score": 0.14906,
+      "private_score": 0.11639
+    },
+    {
+      "index": 6,
+      "filename": "submission_v6_vgggpu_20261107_131857.csv",
+      "sha256": "ce342ed18a89f627f31bec1a0f52a37c92d48b1609350662d2ccfde7c7c344cf",
+      "public_score": 0.13568,
+      "private_score": 0.10937
+    },
+    {
+      "index": 7,
+      "filename": "submission_v7_vggv7_20261108_011519.csv",
+      "sha256": "9119701b04ef5d6428447d7b9d96ae9512f6488d790529f7ea04e94ffd0a9c92",
+      "public_score": 0.13151,
+      "private_score": 0.10723
+    },
+    {
+      "index": 8,
+      "filename": "submission_v8_vggv8_20261108_090555.csv",
+      "sha256": "b6ec7831515e7bd8c397cdbe9a731dee178c4b3869dcc03618d861bb68b9c563",
+      "public_score": 0.12293,
+      "private_score": 0.09955
+    },
+    {
+      "index": 9,
+      "filename": "submission_v9_vggv9_20261109_121945.csv",
+      "sha256": "04157b46080e804745b985919f7ae2beabb5ddd11894b28cedb4ed5fc53c3873",
+      "public_score": 0.11825,
+      "private_score": 0.10466
+    },
+    {
+      "index": 11,
+      "filename": "submission_v11_vggv11_20261112_032951.csv",
+      "sha256": "96925e161279c595dabaac4e08bfeae021c49dfb0859f5c39b9efce8a26de4e0",
+      "public_score": 0.12483,
+      "private_score": 0.10345
+    }
+  ],
+  "threshold_private_logloss": 0.08883
+}

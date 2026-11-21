@@ -1,0 +1,49 @@
+# ==== Python cache ====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# ==== Large raw competition data (downloaded from Kaggle, not tracked) ====
+# Statoil/C-CORE Iceberg Classifier Challenge raw data
+data/train.json
+data/test.json
+
+# ==== Intermediate artifacts (model prediction caches, regenerable) ====
+oof/*.npz
+oof/*.npz.meta.json
+
+# ==== Build artifacts and temporary files ====
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blm
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# ==== Course report (deliverable for course submission, NOT published to GitHub) ====
+reports/*.pdf
+reports/*.tex
+reports/*.aux
+reports/figures/
+
+# ==== Process / auxiliary files (not tracked) ====
+# Stage-report DOCX (only the final LaTeX report is kept)
+reports/*.docx
+# Report auto-generation scripts (the final report is hand-written LaTeX)
+scripts/*_report.py
+scripts/rectification_report.py
+scripts/make_report_figures.py
+scripts/update_submission_history.py
+
+# ==== System and editor files ====
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/

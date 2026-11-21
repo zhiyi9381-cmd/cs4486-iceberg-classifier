@@ -1,0 +1,90 @@
+{
+  "run_id": "p4meta_20261104_113138",
+  "code_version": "f126c98989579f2f2bc6354b1a4d34787da84d9136f2f484bc5d766420b09d3c",
+  "timestamp_utc": "2026-11-04T11:31:38.369671+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "lightgbm": "4.7.0",
+  "nn_pred_source": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\nn_pred_nested_p4nested_20261104_104820.npz",
+  "n_bins": 30,
+  "knn_k": 15,
+  "lgbm_cfg": {
+    "n_estimators": 200,
+    "learning_rate": 0.05,
+    "num_leaves": 8,
+    "max_depth": 3,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "random_state": 42,
+    "verbosity": -1
+  },
+  "seed": 42,
+  "ablation": {
+    "CNN_only": {
+      "features": [
+        "nn_pred"
+      ],
+      "folds_logloss": [
+        0.245646,
+        0.227269,
+        0.34736,
+        0.225376,
+        0.270544
+      ],
+      "mean": 0.263239,
+      "std_ddof0": 0.045092
+    },
+    "plus_angle": {
+      "features": [
+        "nn_pred",
+        "inc_angle"
+      ],
+      "folds_logloss": [
+        0.205817,
+        0.178703,
+        0.264944,
+        0.185094,
+        0.217953
+      ],
+      "mean": 0.210502,
+      "std_ddof0": 0.030653
+    },
+    "plus_bin": {
+      "features": [
+        "nn_pred",
+        "inc_angle",
+        "bin_median",
+        "bin_mean",
+        "bin_logcount"
+      ],
+      "folds_logloss": [
+        0.203609,
+        0.171714,
+        0.250873,
+        0.188512,
+        0.232316
+      ],
+      "mean": 0.209405,
+      "std_ddof0": 0.028758
+    },
+    "plus_KNN": {
+      "features": [
+        "nn_pred",
+        "inc_angle",
+        "bin_median",
+        "bin_mean",
+        "bin_logcount",
+        "knn_prior"
+      ],
+      "folds_logloss": [
+        0.158677,
+        0.14176,
+        0.226036,
+        0.125412,
+        0.174471
+      ],
+      "mean": 0.165271,
+      "std_ddof0": 0.034531
+    }
+  }
+}

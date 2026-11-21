@@ -1,0 +1,91 @@
+{
+  "run_id": "p2cnn_20261104_085403",
+  "timestamp_utc": "2026-11-04T08:54:03.689306+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "numpy": "2.5.1",
+  "torch": "2.15.0+cpu",
+  "seed": 42,
+  "n_train": 1604,
+  "folds_path": "C:\\Users\\zhouz\\Desktop\\method2\\folds\\folds_v2.json",
+  "logloss_eps": 1e-15,
+  "model": "ShallowCNN (2x75x75 + inc_angle bypass)",
+  "arch": "Conv(2->8,3x3,pad1)+BN+ReLU+MP2 -> Conv(8->16)+BN+ReLU+MP2 -> Conv(16->40)+BN+ReLU -> GAP -> cat(angle) -> Linear(41->1)",
+  "train_cfg": {
+    "epochs": 60,
+    "batch": 32,
+    "lr": 0.001,
+    "optimizer": "Adam",
+    "weight_decay": 0.0001,
+    "dropout": 0.3,
+    "loss": "BCEWithLogitsLoss"
+  },
+  "param_count_total": 7290,
+  "param_count_per_layer": [
+    [
+      "features.0.weight",
+      144
+    ],
+    [
+      "features.0.bias",
+      8
+    ],
+    [
+      "features.1.weight",
+      8
+    ],
+    [
+      "features.1.bias",
+      8
+    ],
+    [
+      "features.4.weight",
+      1152
+    ],
+    [
+      "features.4.bias",
+      16
+    ],
+    [
+      "features.5.weight",
+      16
+    ],
+    [
+      "features.5.bias",
+      16
+    ],
+    [
+      "features.8.weight",
+      5760
+    ],
+    [
+      "features.8.bias",
+      40
+    ],
+    [
+      "features.9.weight",
+      40
+    ],
+    [
+      "features.9.bias",
+      40
+    ],
+    [
+      "head.weight",
+      41
+    ],
+    [
+      "head.bias",
+      1
+    ]
+  ],
+  "folds_logloss": [
+    0.399449,
+    0.423956,
+    0.529475,
+    0.335196,
+    0.31136
+  ],
+  "mean": 0.399887,
+  "std_ddof0": 0.076674
+}

@@ -1,0 +1,50 @@
+{
+  "run_id": "p5_20261104_114312",
+  "timestamp_utc": "2026-11-04T11:43:16.570631+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "lightgbm": "4.7.0",
+  "code_version": "53ec933a49a1c708c64708807368cce771582b0385fb25d100bcfa4ae23a1c0f",
+  "nn_pred_source": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\nn_pred_nested_p4nested_20261104_104820.npz",
+  "seed": 42,
+  "logloss_eps": 1e-15,
+  "p_meta_oof_logloss": 0.165265,
+  "p_nn_oof_logloss": 0.247059,
+  "w_candidates_step": 0.05,
+  "fold_nested_w": [
+    {
+      "fold": 0,
+      "w": 0.8,
+      "inner_logloss": 0.176033
+    },
+    {
+      "fold": 1,
+      "w": 0.7,
+      "inner_logloss": 0.184317
+    },
+    {
+      "fold": 2,
+      "w": 0.7,
+      "inner_logloss": 0.182338
+    },
+    {
+      "fold": 3,
+      "w": 0.85,
+      "inner_logloss": 0.158097
+    },
+    {
+      "fold": 4,
+      "w": 0.8,
+      "inner_logloss": 0.170652
+    }
+  ],
+  "fold_nested_fusion_logloss": 0.168227,
+  "descriptive_w": 1.0,
+  "descriptive_fusion_logloss": 0.165265,
+  "fixed_weight_ref": {
+    "w=0.5": 0.1823,
+    "w=0.7": 0.170691,
+    "w=0.9": 0.165638
+  },
+  "disclosure": "Route B (compromise disclosure): nested w selection within folds satisfies R5 (outer validation folds are excluded); however, the meta inner CV reuses P4's strictly nested nn_pred without retraining the CNN inside itr, so there is R1 re-nesting leakage (magnitude about 1/1026), which only makes the w selection slightly optimistic; the val fusion predictions have no leakage and the CV score is honest."
+}

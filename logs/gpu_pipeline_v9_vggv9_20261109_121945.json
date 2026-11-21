@@ -1,0 +1,57 @@
+{
+  "run_id": "vggv9_20261109_121945",
+  "timestamp_utc": "2026-11-09T15:59:04.629007+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "torch": "2.6.0+cu124",
+  "cuda": true,
+  "lightgbm": "4.7.0",
+  "model": "Self-supervised + 2-round pseudo-label iteration + VGG9 (1.76M) multiseed+TTA + exact_angle_group + label_prior_k2 + multi_LGBM + soft_leaky",
+  "seeds": [
+    42,
+    7,
+    2024,
+    1234,
+    0
+  ],
+  "lgbm_seeds": [
+    42,
+    7,
+    2024
+  ],
+  "label_prior_k": 2,
+  "soft_leaky_w": 0.5,
+  "pretrain": {
+    "epochs": 15,
+    "noise": 0.15
+  },
+  "pseudo_r1": {
+    "hi": 0.9,
+    "lo": 0.1,
+    "n": 4382
+  },
+  "pseudo_r2": {
+    "hi": 0.85,
+    "lo": 0.15,
+    "n": 6853
+  },
+  "train_cfg": {
+    "epochs": 60,
+    "batch": 32,
+    "lr": 0.001,
+    "wd": 0.0005,
+    "dropout": 0.4,
+    "label_smoothing": 0.05
+  },
+  "pred_checks": {
+    "pred_in_01": true,
+    "pred_min": 0.004207568808651509,
+    "pred_max": 0.9955666545491374,
+    "n_override": 1959,
+    "n_test": 8424,
+    "id_unique": true
+  },
+  "csv_path": "C:\\Users\\12150\\WorkBuddy\\2026-11-07-20-47-13\\method2\\submissions\\submission_v9_vggv9_20261109_121945.csv",
+  "csv_sha256": "04157b46080e804745b985919f7ae2beabb5ddd11894b28cedb4ed5fc53c3873",
+  "disclosure": "Self-supervised pretraining uses all images (unlabeled only); pseudo-labels are produced by a CNN without angle-derived features to avoid reinforcing the angle association; label_prior/soft_leaky are derived from training-label statistics."
+}

@@ -1,0 +1,43 @@
+{
+  "run_id": "vgggpu_20261107_131857",
+  "timestamp_utc": "2026-11-07T14:51:40.388742+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "torch": "2.6.0+cu124",
+  "cuda": true,
+  "lightgbm": "4.7.0",
+  "model": "VGG9 (1.76M) multiseed+TTA + exact_angle_group + label_prior_k2 + multi_LGBM + soft_leaky_w0.5",
+  "seeds": [
+    42,
+    7,
+    2024,
+    1234,
+    0
+  ],
+  "lgbm_seeds": [
+    42,
+    7,
+    2024
+  ],
+  "label_prior_k": 2,
+  "soft_leaky_w": 0.5,
+  "train_cfg": {
+    "epochs": 60,
+    "batch": 32,
+    "lr": 0.001,
+    "wd": 0.0005,
+    "dropout": 0.4,
+    "label_smoothing": 0.05
+  },
+  "pred_checks": {
+    "pred_in_01": true,
+    "pred_min": 0.0017427535947000309,
+    "pred_max": 0.994858126137425,
+    "n_override": 1959,
+    "n_test": 8424,
+    "id_unique": true
+  },
+  "csv_path": "C:\\Users\\12150\\WorkBuddy\\2026-11-07-20-47-13\\method2\\submissions\\submission_v6_vgggpu_20261107_131857.csv",
+  "csv_sha256": "ce342ed18a89f627f31bec1a0f52a37c92d48b1609350662d2ccfde7c7c344cf",
+  "disclosure": "Methodology (angle-group features + stacking) references the public winning approach and is independently implemented; label_prior/soft_leaky are derived from training-label statistics."
+}

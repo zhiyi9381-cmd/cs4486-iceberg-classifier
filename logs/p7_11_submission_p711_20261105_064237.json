@@ -1,0 +1,33 @@
+{
+  "run_id": "p711_20261105_064237",
+  "timestamp_utc": "2026-11-05T06:42:48.039422+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "lightgbm": "4.7.0",
+  "code_version": "6c1c85460b3b6f93eea0ea7540963c5a92d241c2b3a087acafefcce13bfeee6a",
+  "model": "multiseed_DeepCNN + exact_angle_group + label_prior_k2 + handcrafted_15 + multi_LGBM + soft_leaky_w0.5",
+  "nn_pred_source": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\nn_pred_multiseed_p76cnn_20261104_154347.npz",
+  "lgbm_seeds": [
+    42,
+    7,
+    2024
+  ],
+  "label_prior_k": 2,
+  "soft_leaky_w": 0.5,
+  "n_handcrafted": 15,
+  "cv_meta_handcrafted": 0.138602,
+  "cv_meta_handcrafted_softleaky": 0.132702,
+  "nan_fix": 133,
+  "pred_checks": {
+    "pred_in_01": true,
+    "pred_min": 0.00024549292392475277,
+    "pred_max": 0.9978754874982627,
+    "n_override": 1959,
+    "n_test": 8424,
+    "id_unique": true
+  },
+  "csv_path": "C:\\Users\\zhouz\\Desktop\\method2\\submissions\\submission_v5_p711_20261105_064237.csv",
+  "csv_sha256": "3ae02c1562bec21eb6ac14cf2825260bf4583ead48baac3b2a4e39cb61007561",
+  "pred_npz": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\test_preds_5fold_v5_p711_20261105_064237.npz",
+  "disclosure": "Hand-crafted features are a new image-side information source (orthogonal to the CNN); label_prior/soft_leaky are derived from training-label statistics (no leaderboard feedback)."
+}

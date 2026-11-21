@@ -1,0 +1,14 @@
+{
+  "run_id": "p1det_20261104_083101",
+  "timestamp_utc": "2026-11-04T08:31:01.897618+00:00",
+  "sklearn_version": "1.9.0",
+  "regen_strategy": "StratifiedKFold(n_splits=5, shuffle=True, random_state=42)",
+  "deterministic_val_idx_identical": true,
+  "regen_val_sizes": [
+    321,
+    321,
+    321,
+    321,
+    320
+  ]
+}

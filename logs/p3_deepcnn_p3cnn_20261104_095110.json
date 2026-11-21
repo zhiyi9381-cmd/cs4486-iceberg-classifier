@@ -1,0 +1,133 @@
+{
+  "run_id": "p3cnn_20261104_095110",
+  "timestamp_utc": "2026-11-04T09:51:10.191449+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "numpy": "2.5.1",
+  "torch": "2.15.0+cpu",
+  "seed": 42,
+  "n_train": 1604,
+  "folds_path": "C:\\Users\\zhouz\\Desktop\\method2\\folds\\folds_v2.json",
+  "fold_idx_sha256": "82ab17b4a225e1a0e5155fbb5421c0432c5a2e430ecae5b9ff8362b1a5acc71f",
+  "labels_sha256": "82c5cbbcea6e6eb4689661abbffd295daceca75603af4da4e4c7138e63149319",
+  "train_sha256": "a56756a2528a09b139dc2747e2e40d869f9da7a8c9df37b188b6163f6bfb8696",
+  "logloss_eps": 1e-15,
+  "model_cfg": {
+    "name": "DeepCNN",
+    "dropout": 0.4,
+    "arch": "Conv(2->16)+BN+ReLU+MP2 -> Conv(16->32)+BN+ReLU+MP2 -> Conv(32->64)+BN+ReLU+MP2 -> Conv(64->72)+BN+ReLU -> GAP -> Dropout(0.4) -> cat(angle) -> Linear(73->1)"
+  },
+  "train_cfg": {
+    "epochs": 60,
+    "batch": 32,
+    "lr": 0.001,
+    "optimizer": "Adam",
+    "weight_decay": 0.0001,
+    "lr_schedule": "cosine(T_max=60)",
+    "loss": "BCEWithLogitsLoss"
+  },
+  "code_version": "81436755d743816c52fd78f9317f06f16023883f9d968aecc348089e708e5d27",
+  "param_count_total": 65426,
+  "param_count_per_layer": [
+    [
+      "features.0.weight",
+      288
+    ],
+    [
+      "features.0.bias",
+      16
+    ],
+    [
+      "features.1.weight",
+      16
+    ],
+    [
+      "features.1.bias",
+      16
+    ],
+    [
+      "features.4.weight",
+      4608
+    ],
+    [
+      "features.4.bias",
+      32
+    ],
+    [
+      "features.5.weight",
+      32
+    ],
+    [
+      "features.5.bias",
+      32
+    ],
+    [
+      "features.8.weight",
+      18432
+    ],
+    [
+      "features.8.bias",
+      64
+    ],
+    [
+      "features.9.weight",
+      64
+    ],
+    [
+      "features.9.bias",
+      64
+    ],
+    [
+      "features.12.weight",
+      41472
+    ],
+    [
+      "features.12.bias",
+      72
+    ],
+    [
+      "features.13.weight",
+      72
+    ],
+    [
+      "features.13.bias",
+      72
+    ],
+    [
+      "head.weight",
+      73
+    ],
+    [
+      "head.bias",
+      1
+    ]
+  ],
+  "seeds_single": [
+    42
+  ],
+  "seeds_bag2": [
+    42,
+    7
+  ],
+  "oof_logloss_single_seed42": 0.247059,
+  "oof_logloss_bag2_seed42_7": 0.228352,
+  "per_fold_logloss_single_seed42": [
+    0.230825,
+    0.211073,
+    0.316988,
+    0.203062,
+    0.273431
+  ],
+  "per_fold_logloss_seed7": [
+    0.253046,
+    0.267801,
+    0.349254,
+    0.212914,
+    0.2604
+  ],
+  "oof_paths": {
+    "single_seed42": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\oof_single_seed42_p3cnn_20261104_095110.npz",
+    "seed7": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\oof_seed7_p3cnn_20261104_095110.npz",
+    "bag2_seed42_7": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\oof_bag2_seed42_7_p3cnn_20261104_095110.npz"
+  }
+}

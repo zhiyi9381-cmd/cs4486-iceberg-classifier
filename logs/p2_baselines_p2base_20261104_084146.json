@@ -1,0 +1,45 @@
+{
+  "run_id": "p2base_20261104_084146",
+  "timestamp_utc": "2026-11-04T08:41:46.832879+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "numpy": "2.5.1",
+  "sklearn_version": "1.9.0",
+  "seed": 42,
+  "n_train": 1604,
+  "folds_path": "C:\\Users\\zhouz\\Desktop\\method2\\folds\\folds_v2.json",
+  "folds_meta_run_id": "p1_20261104_074823",
+  "logloss_eps": 1e-15,
+  "models": {
+    "dummy": {
+      "type": "constant_probability (per-fold train prior)",
+      "folds_logloss": [
+        0.69102,
+        0.691397,
+        0.691397,
+        0.691397,
+        0.691194
+      ],
+      "mean": 0.691281,
+      "std_ddof0": 0.000152
+    },
+    "logistic_regression": {
+      "type": "LogisticRegression (flatten 2x75x75 + inc_angle, StandardScaler)",
+      "config": {
+        "C": 0.001,
+        "solver": "liblinear",
+        "max_iter": 1000,
+        "random_state": 42
+      },
+      "folds_logloss": [
+        0.530176,
+        0.51426,
+        0.53604,
+        0.541792,
+        0.536522
+      ],
+      "mean": 0.531758,
+      "std_ddof0": 0.009491
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# GPU dependencies (install PyTorch separately with the matching CUDA index)
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+#   (choose cu118 / cu121 / cu124 according to the installed CUDA version)
+lightgbm==4.7.0
+numpy
+scipy
+scikit-learn

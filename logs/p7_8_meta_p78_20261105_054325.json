@@ -1,0 +1,32 @@
+{
+  "run_id": "p78_20261105_054325",
+  "timestamp_utc": "2026-11-05T05:43:30.839785+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "lightgbm": "4.7.0",
+  "code_version": "9fac0abc67426cd223c1e782b2ddedeaf6d63c9ec034bdf97e1c84fa6ff2c9f2",
+  "model": "multiseed_DeepCNN + exact_angle_group + label_prior_k2 + multi_LGBM + soft_leaky_w0.5",
+  "nn_pred_source": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\nn_pred_multiseed_p76cnn_20261104_154347.npz",
+  "lgbm_seeds": [
+    42,
+    7,
+    2024
+  ],
+  "label_prior_k": 2,
+  "soft_leaky_w": 0.5,
+  "cv_meta_labelprior": 0.147814,
+  "cv_meta_labelprior_softleaky": 0.142156,
+  "nan_fix": 133,
+  "pred_checks": {
+    "pred_in_01": true,
+    "pred_min": 0.0004305421081467445,
+    "pred_max": 0.995563690892841,
+    "n_override": 1959,
+    "n_test": 8424,
+    "id_unique": true
+  },
+  "csv_path": "C:\\Users\\zhouz\\Desktop\\method2\\submissions\\submission_v4_p78_20261105_054325.csv",
+  "csv_sha256": "1b44c42e339058e823890edb1f153c1bbf8efc05b175803b135281ff37020ec0",
+  "pred_npz": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\test_preds_5fold_v4_p78_20261105_054325.npz",
+  "disclosure": "label_prior uses true-label proportions of the angle neighborhood (strict leave-one-out); soft_leaky uses exact-match pure-group priors. Both are based on training-label statistics (no leaderboard feedback). Referenced in Section V of the report."
+}

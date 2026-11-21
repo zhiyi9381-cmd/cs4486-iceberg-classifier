@@ -1,0 +1,132 @@
+{
+  "run_id": "p1val_20261104_082018",
+  "timestamp_utc": "2026-11-04T08:20:18.771660+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "sklearn_version": "1.9.0",
+  "folds_path": "C:\\Users\\zhouz\\Desktop\\method2\\folds\\folds_v2.json",
+  "train_sha256": "a56756a2528a09b139dc2747e2e40d869f9da7a8c9df37b188b6163f6bfb8696",
+  "labels_sha256": "82c5cbbcea6e6eb4689661abbffd295daceca75603af4da4e4c7138e63149319",
+  "fold_idx_sha256": "82ab17b4a225e1a0e5155fbb5421c0432c5a2e430ecae5b9ff8362b1a5acc71f",
+  "validate_passed": true,
+  "validate_report": {
+    "passed": true,
+    "checks": {
+      "V1_n_folds": {
+        "ok": true,
+        "value": 5,
+        "expect": 5
+      },
+      "V2_per_fold_disjoint_and_full": {
+        "ok": true,
+        "detail": [
+          {
+            "fold": 0,
+            "train_n": 1283,
+            "val_n": 321,
+            "intersection": 0,
+            "union_full": true
+          },
+          {
+            "fold": 1,
+            "train_n": 1283,
+            "val_n": 321,
+            "intersection": 0,
+            "union_full": true
+          },
+          {
+            "fold": 2,
+            "train_n": 1283,
+            "val_n": 321,
+            "intersection": 0,
+            "union_full": true
+          },
+          {
+            "fold": 3,
+            "train_n": 1283,
+            "val_n": 321,
+            "intersection": 0,
+            "union_full": true
+          },
+          {
+            "fold": 4,
+            "train_n": 1284,
+            "val_n": 320,
+            "intersection": 0,
+            "union_full": true
+          }
+        ]
+      },
+      "V3_val_disjoint_and_cover": {
+        "ok": true,
+        "pairwise_disjoint": true,
+        "full_coverage": true,
+        "val_sizes": [
+          321,
+          321,
+          321,
+          321,
+          320
+        ]
+      },
+      "V4_index_range": {
+        "ok": true,
+        "min": 0,
+        "max": 1603,
+        "n": 1604
+      },
+      "V5_stratification": {
+        "ok": true,
+        "global_pos_rate": 0.4694513715710723,
+        "tolerance": "|pos_count - expected| <= 1",
+        "detail": [
+          {
+            "fold": 0,
+            "val_size": 321,
+            "pos_count": 150,
+            "expected_pos_count": 150.694,
+            "pos_rate": 0.4672897196261682,
+            "global_pos_rate": 0.4694513715710723,
+            "count_deviation": 0.694
+          },
+          {
+            "fold": 1,
+            "val_size": 321,
+            "pos_count": 151,
+            "expected_pos_count": 150.694,
+            "pos_rate": 0.470404984423676,
+            "global_pos_rate": 0.4694513715710723,
+            "count_deviation": 0.306
+          },
+          {
+            "fold": 2,
+            "val_size": 321,
+            "pos_count": 151,
+            "expected_pos_count": 150.694,
+            "pos_rate": 0.470404984423676,
+            "global_pos_rate": 0.4694513715710723,
+            "count_deviation": 0.306
+          },
+          {
+            "fold": 3,
+            "val_size": 321,
+            "pos_count": 151,
+            "expected_pos_count": 150.694,
+            "pos_rate": 0.470404984423676,
+            "global_pos_rate": 0.4694513715710723,
+            "count_deviation": 0.306
+          },
+          {
+            "fold": 4,
+            "val_size": 320,
+            "pos_count": 150,
+            "expected_pos_count": 150.224,
+            "pos_rate": 0.46875,
+            "global_pos_rate": 0.4694513715710723,
+            "count_deviation": 0.224
+          }
+        ]
+      }
+    }
+  }
+}

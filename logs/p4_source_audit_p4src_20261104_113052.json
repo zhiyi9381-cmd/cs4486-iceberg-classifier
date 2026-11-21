@@ -1,0 +1,46 @@
+{
+  "run_id": "p4src_20261104_113052",
+  "timestamp_utc": "2026-11-04T11:30:52.532046+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "nn_pred_source": "C:\\Users\\zhouz\\Desktop\\method2\\oof\\nn_pred_nested_p4nested_20261104_104820.npz",
+  "per_outer_stats": [
+    {
+      "outer": 0,
+      "tr_size": 1283,
+      "clean_source_mean": 255.6,
+      "dirty_source_mean": 1026.4,
+      "dirty_ratio": 0.8006
+    },
+    {
+      "outer": 1,
+      "tr_size": 1283,
+      "clean_source_mean": 255.6,
+      "dirty_source_mean": 1026.4,
+      "dirty_ratio": 0.8006
+    },
+    {
+      "outer": 2,
+      "tr_size": 1283,
+      "clean_source_mean": 255.6,
+      "dirty_source_mean": 1026.4,
+      "dirty_ratio": 0.8006
+    },
+    {
+      "outer": 3,
+      "tr_size": 1283,
+      "clean_source_mean": 255.6,
+      "dirty_source_mean": 1026.4,
+      "dirty_ratio": 0.8006
+    },
+    {
+      "outer": 4,
+      "tr_size": 1284,
+      "clean_source_mean": 255.8,
+      "dirty_source_mean": 1027.2,
+      "dirty_ratio": 0.8006
+    }
+  ],
+  "overall_dirty_ratio": 0.8006,
+  "interpretation": "The bin/KNN features of tr sample i aggregate nn_pred[j] of other tr samples j; about 80% of j come from inner folds different from i (whose CNN training set contains i), forming the tr-side indirect path described in R4; but the va side is clean (va samples are not in tr_k, and no inner CNN has seen va samples), so the 5-fold CV score is honest; leakage magnitude: each source nn_pred is influenced by i's label by about 1/1283, tiny after aggregation."
+}
